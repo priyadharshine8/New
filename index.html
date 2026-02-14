@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Forever ❤️</title>
+
+<style>
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#1e1e2f,#302b63,#24243e);
+color:white;
+overflow-x:hidden;
+min-height:100vh;
+padding:20px;
+position:relative;
+}
+
+/* container */
+.container{
+max-width:700px;
+margin:auto;
+position:relative;
+z-index:2;
+animation:fade 1.5s ease;
+}
+
+/* title */
+h1{
+font-size:clamp(26px,5vw,40px);
+margin-bottom:20px;
+text-align:center;
+}
+
+/* paragraph (NO CUT) */
+p{
+font-size:clamp(15px,3.8vw,18px);
+line-height:1.8em;
+white-space:pre-line;
+margin-bottom:20px;
+}
+
+/* button */
+button{
+padding:12px 25px;
+border:none;
+border-radius:30px;
+font-size:16px;
+margin-top:20px;
+cursor:pointer;
+background:white;
+color:#ff4e88;
+font-weight:bold;
+transition:0.3s;
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+/* glow text */
+.glow{
+font-size:clamp(28px,6vw,42px);
+font-weight:bold;
+text-align:center;
+margin-top:25px;
+animation:glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+from{
+text-shadow:0 0 10px #fff,0 0 20px #ff4e88;
+}
+to{
+text-shadow:0 0 20px #fff,0 0 40px #ff4e88;
+}
+}
+
+/* photo section */
+#photoSection{
+display:none;
+margin-top:30px;
+text-align:center;
+}
+
+#photoSection img{
+width:100%;
+max-width:300px;
+border-radius:20px;
+box-shadow:0 0 30px pink;
+margin-top:15px;
+}
+
+/* fade */
+@keyframes fade{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* floating hearts */
+.heart{
+position:fixed;
+bottom:-20px;
+font-size:16px;
+color:#ff4e88;
+opacity:0.7;
+animation:floatUp linear forwards;
+z-index:1;
+}
+
+@keyframes floatUp{
+0%{
+transform:translateY(0) scale(1);
+opacity:0.7;
+}
+100%{
+transform:translateY(-110vh) scale(1.5);
+opacity:0;
+}
+}
+
+/* mobile spacing */
+@media (max-width:480px){
+body{
+padding:15px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<audio id="music" loop>
+<source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+<h1 id="title">Friend 💫</h1>
+
+<p id="text"></p>
+
+<button onclick="nextStep()">Next ➝</button>
+
+<div id="photoSection">
+<div class="glow">
+Sowfia ❤️ Priya To Mrs.Priya ❤️ Mrs.Sowfia
+</div>
+
+<p>
+From friend ➝ crush ➝ lover ➝ wife,
+our journey became my greatest blessing.
+
+You are not just my love story.
+You are my forever😽🤍.
+
+Un kai vida maaten…
+Eppovume un kooda dhaan ❤️✨
+</p>
+
+<img src="ourphoto.jpg">
+</div>
+
+</div>
+
+<script>
+
+const titles=[
+"Friend 💫",
+"Crush 💕",
+"Lover ❤️",
+"Wife 👑💍"
+];
+
+const texts=[
+
+`Roshan akka nala dhaan namma love start ey achuu thango…
+
+Una enaku 1st Roshan akka anaiki evening school veliya una intro panalana,
+yepavume enaku nee yarune therinjirukadhu d chellam.
+
+Adhu apram dhaan nee en kitta pesuna🙈…
+Nee solra appo unaku enaiya pudikadhu nu,
+aana nee emela care kamipa adhu enaku theriyum thango❤️.
+
+Munadi vandhu “ukaarunga” nu solrapolam
+nee enaku un bench laiye place kudupa and ipo un life laiyum place kuduthuruka💕😁…
+Enaiya paathutey irupa d chelo…
+adikadi back side varuva😂
+
+Unga akka kitta lam enaiya pathi soliruka
+Anaiki Sherin akka friends vandhu “Yaaru Priya?” nu ketanga…
+Apo lunch time la naan dhaan sonen…
+
+Nee odi vandhu avangala kuptu poita 😂
+Un birthday ku enaku periya chocolate tharuva…
+Naanum en birthday ku unaku periya chocolate tharuven.
+
+Evening auto ku en kooda dha varuva…
+Appove enaku nee romba special d Papu.`,
+
+`Apram dhaan nee “crush” nu sonna d thango…
+Adhu enanu theriyama naan tuition akka kitta kete 😂
+
+8th la Wednesday ground poitu vandha naal…
+Nee enaiya paathu unoda left eye 3 times kanu adicha 🙈🙈
+Naan semma freeze aagiten thango…
+
+CV enaiya kalaiyacha… naan bench eri pone 😂
+Aana naan unaiya dha paathen chellooww…
+Yellarum pakurapo nee matum pinadi thirumbi pakave ila.
+
+NMMS study time la nee pinadi vandha…
+nanum susmi pesitu irundhom apo ne susmi ta sona
+“Naan kanu adichadha avanga kavnichangala ilaiyanu kuda therla?” nu solitu irundha…
+Enaku theriyume na dha kavanichenae thango… aana naan kaatikala 😂
+
+Miru Miru nu soli verupethitu irupen, sight adichitu dhaan irupen…
+11th la staff room pinadi iruka class room 1st floor la…
+na sogama irukadha parthutu ne vandhu enta pesuna 1st bench apo tahseen pakathula irundhe ne vandhu pesuna and end la ne oru song paduna enna nadanthalum penne unna vida matenu😘😘
+Adhu romba precious d thango 🥹
+
+Appove enaku purinjiruchu…
+Nee enaku romba mukkiyam unna miss panida kudadhunu.`,
+
+`School mudinju lover aanom…
+
+Long distance la neraya sanda vandhuchu…
+Aana adhavida adhigama love vandhuchu d chelo.
+
+Neraya miss pannom😔…
+Neraya azhuthom😭…
+Neraya misunderstandings🤧…
+
+Aana ovvoru sandayum namma love ah innum strong pannuchu thango🤍😚.
+
+“Unna vida maten” nu nee sonna podhum d?
+enaku romba happy agidum😁.
+
+Nee en best friend😚,
+en crush🙈,
+en lover💋💗…
+
+ellame nee dhaan💋🤍🫂.`,
+
+`Nov 21, 2025…
+
+Andha naal namma life la biggest happiness d Pondatiiiii💋🤍🫂.
+Unna kalyanam pannina moment la en life complete aayiduchu😍😍.
+
+Ippo nee en wife🫂🫂💋…
+En uyir💗…
+En chellam😚…
+En thango😘🤍.
+
+Friend ah start aana namma story…
+Crush ah valandhu…
+Lover ah strong aayitu…
+Ippo wife & wife ah forever journey start pannom d pondatiii eyyy😍.
+
+Nee dhaan en past…
+En present…
+En future…
+
+Un kai vida maaten…
+Eppovume un kooda dhaan ❤️✨`
+];
+
+let index = 0;
+document.getElementById("text").innerText = texts[0];
+
+function nextStep(){
+index++;
+if(index < 3){
+document.getElementById("title").innerText = titles[index];
+document.getElementById("text").innerText = texts[index];
+}else{
+document.getElementById("title").innerText = titles[index];
+document.getElementById("text").innerText = texts[index];
+document.querySelector("button").style.display="none";
+setTimeout(()=>{
+document.getElementById("photoSection").style.display="block";
+},2000);
+}
+}
+
+/* floating hearts */
+function createHeart(){
+const heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"vw";
+heart.style.animationDuration=(4 + Math.random()*4)+"s";
+document.body.appendChild(heart);
+setTimeout(()=>heart.remove(),8000);
+}
+setInterval(createHeart,400);
+
+/* mobile autoplay */
+document.body.addEventListener("click", function(){
+document.getElementById("music").play();
+},{once:true});
+
+</script>
+
+</body>
+</html>
